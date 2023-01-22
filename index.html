@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>Personal Portfolio Website</title>
+</head>
+
+<body>
+
+    <div class="hero">
+        
+        <nav id="navbar">
+
+
+
+            <ul>
+                <li id="logo">
+                     <a href="#"><b> DevFahim</b></a>
+                </li>
+                <li> <a href="#">HOME </a> </li>
+                <li> <a href="#about">ABOUT </a> </li>
+                <li> <a href="#skills">SKILLS</a> </li>
+                <li> <a href="#services">SERVICES </a> </li>
+                <li> <a href="#contact">CONTACT ME </a> </li>
+
+            </ul>
+        </nav>
+        <br>
+        <div class="intro">
+
+            <article>
+                <div id="move_up">
+                    <h1>I'm <span id="name"></span></h1>
+                    <p>This is my official Portfolio website to showcase my
+                        all works related to <br> programming and software skills </p>
+
+                    <button type="button" onclick="downloadFile('images/Fahim_cv.pdf','CV')">
+                        <a href="">Download CV</a>
+                    </button>
+
+                </div>
+            </article>
+            <div>
+                <aside>
+                    <img src="images/shape.png" height="600px">
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!--- Services--->
+
+    <section class="services" id="services">
+
+        <br><br><br><br>
+        <h1>Services</h1>
+        <div id="side-by-side">
+            <article>
+                <img class="service_img" src="images/appd.png">
+                <h2> App Development </h2> <br>
+                <p> There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form </p>
+            </article>
+
+            <article>
+                <img class="service_img" src="images/designer.png">
+                <h2> Graphic Design </h2> <br>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form
+                </p>
+            </article>
+
+            <article>
+                <img class="service_img" src="images/webd.png"> <br>
+                <h2> Web Development </h2> <br>
+                <p> There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form </p>
+            </article>
+        </div>
+    </section>
+
+    <!--- End Services--->
+
+    <!--- Skills--->
+
+    <section class="skills" id="skills">
+        <br><br><br><br>
+        <h1>My Skills</h1>
+        <div class="flexon">
+            <div class="part-1">
+                <h2>My creative skills & experiences</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae
+                    consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate
+                    recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat?
+                    Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+
+            </div>
+            <div class="part-2">
+                <ul>
+                    <li class="html-90">
+                        <div class="sep">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                    </li>
+                    <li class="css-60">
+                        <div class="sep">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+
+                    </li>
+                    <li class="javascript-80">
+                        <div class="sep">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                    </li>
+                    <li class="php-50">
+                        <div class="sep">
+                            <span>PHP</span>
+                            <span>50%</span>
+                    </li>
+                    <li class="mysql-40">
+                        <div class="sep">
+                            <span>MySQL</span>
+                            <span>40%</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+    </section>
+
+    <!--- End Skills--->
+    <article id="about">
+
+<br><br><br><br>
+        <h1>About Me</h1>
+        <br>
+        <div class="flexon-2">
+            <div class="cl1">
+                <h2>I'm Fahim Al Awsaf</h2>
+                <p>I have recently graduated from CSE and currently looking for job
+                    opportunities. In addition to my coding and Development skill, I am also working
+                    as an IELTS Instructor. Here is a video resume of myself for details.
+                </p>
+            </div>
+
+            <div class="cl2">
+                <video width="400" height="300" controls>
+                    <source src="Images\THE_SEED.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+    </article>
+    </section>
+
+    <br><br><br><br>
+    <footer align="center" id="contact">
+
+        <h2>Contact Me</h2>
+        <p>
+            Do you require a website of your own? Contact me via following media.
+        <ul>
+            <li>Email: fawsaf181253@gmail.com</li>
+            <li>Phone no: +8801533035276</li>
+        </ul>
+
+        </p>
+
+        <span> Copyright @ 2023 | DevFahim </span>
+    </footer>
+    <script src="script.js"> </script>
+</body>
+
+</html>

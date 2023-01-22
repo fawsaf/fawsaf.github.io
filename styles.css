@@ -1,0 +1,282 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    
+}
+
+
+.hero {
+    
+    /* background-image: url('https://wallpaperaccess.com/full/212469.jpg');  */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px 0;
+    /* clip-path: polygon(0 0, 100% 0, 100% 91%, 0 91%); */
+    height: 674px;
+    transition: background-image 0.8s ease-in-out;
+    
+}
+
+
+
+/* Nav */
+#navbar {
+    
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 40px;
+    
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #ffc433;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    bottom: 20px;
+    
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    
+    
+}
+
+#navbar a:hover {
+    color: red;
+    
+}
+
+#logo{
+    position: relative;
+    bottom: 12px;
+    font-family: cursive;
+    font-size: 26px;
+    
+}
+
+
+/* Intro */
+.intro {
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 10%;
+    
+}
+#move_up{
+    position: relative;
+    bottom: 150px;
+}
+.intro article {
+    text-align: center;
+    padding: 0 50px;
+}
+.intro article h1 {
+    color:white;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.intro article p {
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.intro article button {
+    background-color: #222;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+}
+button a  {
+    color: white; 
+    text-decoration: none; 
+}
+
+h1::after {
+    content: '';
+    text-align: center;
+    border-top: 1px solid #ccc;
+    width: 30%;
+    margin: 10px auto; 
+    display: block;
+}
+button a :hover
+{
+    color: red;
+}
+
+/* Services */
+.services {
+    background-color: #f2f2f2;
+    margin-top: 80px;
+    text-align: center;
+    
+}
+.services h1, .skills h1 {
+    
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#side-by-side {
+    display: flex;
+    justify-content: space-evenly; 
+}
+#side-by-side article {
+    width: 25%;
+}
+
+#side-by-side article img {
+    width: 40%;
+    height: 40%;
+}
+/* Skills section  */
+.skills {
+    background-color: #f2f2f2;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.flexon{
+    display: flex;
+}
+.part-1{
+    position: relative;
+    width: 40%;
+    margin-right: 20%;
+    text-align: justify;
+    left: 10%;
+    
+
+}
+.part-2 ul{
+    position: relative;
+    list-style: none;
+    top: 5%;
+}
+
+.part-2 li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+  
+.part-2 li::after {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    padding: 0 100px;
+    background-color: red;
+    transition: width 0.5s ease-in-out;
+    border: 2px solid black;
+    
+}
+  
+.html-90::after {
+    width: 90%;
+    
+}
+  
+.css-60::after {
+    width: 60%;
+}
+  
+.javascript-80::after {
+    width: 80%;
+}
+  
+.php-50::after {
+    width: 50%;
+}
+  
+.mysql-40::after {
+    width: 40%;
+}
+  
+
+/* Article(video) */
+
+article h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.flexon-2{
+    display: flex;
+}
+
+.cl1  {
+    position: relative;
+    width: 50%;
+    margin-right: 20%;
+    text-align: justify;
+    left: 10%;
+}
+.cl2
+{
+    width: 50%;
+}
+article video {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.sep{
+    display: flex;
+    justify-content: space-between;
+    
+}
+/* Footer */
+footer {
+    background-color: #ffc433;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer span {
+    
+    font-style: oblique;
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 20px;
+}
