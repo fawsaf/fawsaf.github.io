@@ -7,7 +7,7 @@ body {
 
 
 .hero {
-    
+    position: relative;
     /* background-image: url('https://wallpaperaccess.com/full/212469.jpg');  */
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,6 +17,13 @@ body {
     height: 674px;
     transition: background-image 0.8s ease-in-out;
     
+}
+aside img{
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    width: 35%;
+    height: 86%;
 }
 
 
@@ -78,7 +85,7 @@ nav ul{
 }
 #move_up{
     position: relative;
-    bottom: 150px;
+    
 }
 .intro article {
     text-align: center;
@@ -120,6 +127,7 @@ button a :hover
 {
     color: red;
 }
+
 
 /* Services */
 .services {
