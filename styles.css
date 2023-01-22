@@ -123,7 +123,7 @@ h1::after {
     margin: 10px auto; 
     display: block;
 }
-button a :hover
+button a:hover
 {
     color: red;
 }
