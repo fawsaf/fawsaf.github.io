@@ -5,7 +5,6 @@ var navbar = document.getElementById("navbar");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 window.onscroll = function() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
@@ -38,7 +37,7 @@ function downloadFile(fileUrl, fileName) {
 
 
 
-// select all images
+// image hovering
 var images = document.getElementsByClassName("service_img");
 // loop through each image
 for (let i = 0; i < images.length; i++) {
@@ -56,28 +55,26 @@ for (let i = 0; i < images.length; i++) {
         });
 }
 
-
+// background transition
 let image = document.getElementsByClassName("hero");
 console.log(image);
-let imgs = ['https://wallpaperaccess.com/full/212469.jpg',
-  'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=600', 
+let imgs = ['https://t3.ftcdn.net/jpg/02/45/08/76/360_F_245087612_bsOH61rLEw5EG155Bdm22VeaM0w2oZKF.jpg', 
 'https://images.pexels.com/photos/633409/pexels-photo-633409.jpeg?auto=compress&cs=tinysrgb&w=600', 
-'https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=600'];
+'https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=600',
+'https://wallpaperaccess.com/full/212469.jpg'];
 
 let i = 0;
-setInterval(function(){
-  for(let j=0;j<image.length;j++){
-    image[j].style.backgroundImage = "url(" + imgs[i] + ")";
-  }
-  i++;
-  if(i === imgs.length) i = 0;
-}, 1200);
+document.getElementById("transition-button").onclick = function(){
+    for(let j=0;j<image.length;j++){
+        image[j].style.backgroundImage = "url(" + imgs[i] + ")";
+    }
+    i++;
+    if(i === imgs.length) i = 0;
+}
 
 
+//current year
+var currentYear = new Date().getFullYear();
+document.getElementById("currentYear").innerHTML = currentYear;
 
 
-
-
-
-
-  

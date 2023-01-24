@@ -12,21 +12,21 @@
 </head>
 
 <body>
-
+    <div class="container">
     <div class="hero">
-        
+
         <nav id="navbar">
 
 
 
             <ul>
                 <li id="logo">
-                     <a href="#"><b> DevFahim</b></a>
+                    <a href="#"><b> DevFahim</b></a>
                 </li>
                 <li> <a href="#">HOME </a> </li>
                 <li> <a href="#about">ABOUT </a> </li>
-                <li> <a href="#skills">SKILLS</a> </li>
                 <li> <a href="#services">SERVICES </a> </li>
+                <li> <a href="#skills">SKILLS</a> </li>
                 <li> <a href="#contact">CONTACT ME </a> </li>
 
             </ul>
@@ -43,16 +43,42 @@
                     <button type="button" onclick="downloadFile('images/Fahim_cv.pdf','CV')">
                         <a href="">Download CV</a>
                     </button>
+                    <button id="transition-button"> Start Transition </button>
+
 
                 </div>
             </article>
             <div>
                 <aside>
-                    <img src="images/shape.png">
+                    <img id="image" src="images/shape.png">
                 </aside>
             </div>
         </div>
     </div>
+    <!-- about me -->
+    <article id="about">
+
+        <br><br>
+        <h1>About Me</h1>
+        <br>
+
+        <div class="cl1">
+
+            <p>Hello, I'm Fahim Al Awsaf.I have recently graduated from CSE and currently looking for job
+                opportunities. In addition to my coding and Development skill, I am also working
+                as an IELTS Instructor. Here is a video resume of myself for details.
+            </p>
+            <br><br>
+        </div>
+
+        <div class="cl2">
+            <video width="400" height="300" controls>
+                <source src="Images\THE_SEED.mp4" type="video/mp4">
+            </video>
+
+
+        </div>
+    </article>
 
     <!--- Services--->
 
@@ -110,6 +136,7 @@
                             <span>90%</span>
                         </div>
                     </li>
+
                     <li class="css-60">
                         <div class="sep">
                             <span>CSS</span>
@@ -143,29 +170,8 @@
     </section>
 
     <!--- End Skills--->
-    <article id="about">
 
-<br><br><br><br>
-        <h1>About Me</h1>
-        <br>
-        <div class="flexon-2">
-            <div class="cl1">
-                <h2>I'm Fahim Al Awsaf</h2>
-                <p>I have recently graduated from CSE and currently looking for job
-                    opportunities. In addition to my coding and Development skill, I am also working
-                    as an IELTS Instructor. Here is a video resume of myself for details.
-                </p>
-            </div>
 
-            <div class="cl2">
-                <video width="400" height="300" controls>
-                    <source src="Images\THE_SEED.mp4" type="video/mp4">
-                </video>
-            </div>
-
-        </div>
-    </article>
-    </section>
 
     <br><br><br><br>
     <footer align="center" id="contact">
@@ -180,9 +186,9 @@
 
         </p>
 
-        <span> Copyright @ 2023 | DevFahim </span>
+        <span> Copyright &copy; <span id="currentYear"></span> | DevFahim </span>
     </footer>
     <script src="script.js"> </script>
 </body>
-
+</div>
 </html>

@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f2f2f2;
@@ -6,24 +8,27 @@ body {
 }
 
 
+
 .hero {
     position: relative;
-    /* background-image: url('https://wallpaperaccess.com/full/212469.jpg');  */
+    background-image: url('https://wallpaperaccess.com/full/212469.jpg');  
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px 0;
     /* clip-path: polygon(0 0, 100% 0, 100% 91%, 0 91%); */
     height: 674px;
-    transition: background-image 0.8s ease-in-out;
+    
     
 }
 aside img{
-    position: absolute;
+    position: absolute; 
+    
     right: 100px;
     top: 100px;
-    width: 35%;
+    width: 30%;
     height: 86%;
+    
 }
 
 
@@ -32,24 +37,28 @@ aside img{
 #navbar {
     
     color: #fff;
-    padding: 10px 0;
+    padding: 4px;
     margin-bottom: 40px;
     
 }
 .sticky {
     position: fixed;
     top: 0;
+    
     width: 100%;
     z-index: 1;
     background-color: #ffc433;
 }
 
 #navbar a {
+    font-family: Montserrat;
+    position: relative;
     color: #fff;
     text-decoration: none;
     margin-right: 100px;
     margin-bottom: 100px;
-    bottom: 20px;
+    top: 6px;
+    
     
 }
 nav ul{
@@ -104,6 +113,7 @@ nav ul{
 }
 .intro article button {
     background-color: #222;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -128,15 +138,43 @@ button a:hover
     color: red;
 }
 
+/* About me */
+#about{
+    position: relative;
+    bottom: 100px;
+    padding: 20px;
+    text-align: center;
+}
+.cl1 p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin: 0 400px;
+    
+}
+
+
+
+article video {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
 
 /* Services */
 .services {
-    background-color: #f2f2f2;
+    position: relative;
+    background-color: #0D0C0E;
     margin-top: 80px;
     text-align: center;
+    color: azure;
+    bottom: 80px;
+    padding-bottom: 6%;
     
 }
-.services h1, .skills h1 {
+.services h1{
     
     font-size: 36px;
     margin-bottom: 50px;
@@ -147,6 +185,7 @@ button a:hover
     justify-content: space-evenly; 
 }
 #side-by-side article {
+    background: #222;
     width: 25%;
 }
 
@@ -156,11 +195,17 @@ button a:hover
 }
 /* Skills section  */
 .skills {
+    position: relative;
+    bottom: 70px;
     background-color: #f2f2f2;
     padding-bottom: 30px;
     text-align: center;
 }
-
+.skills h1, #about,h1 {
+    
+    font-size: 36px;
+    margin-bottom: 50px;
+}
 .flexon{
     display: flex;
 }
@@ -215,42 +260,15 @@ button a:hover
 .mysql-40::after {
     width: 40%;
 }
-  
 
-/* Article(video) */
-
-article h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.flexon-2{
-    display: flex;
-}
-
-.cl1  {
-    position: relative;
-    width: 50%;
-    margin-right: 20%;
-    text-align: justify;
-    left: 10%;
-}
-.cl2
-{
-    width: 50%;
-}
-article video {
-    width: 100%;
-    max-width: 400px;
-    border: 1px solid black;
-    border-radius: 10px;
-}
 .sep{
     display: flex;
     justify-content: space-between;
     
 }
+
+
+
 /* Footer */
 footer {
     background-color: #ffc433;
